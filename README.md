@@ -11,7 +11,7 @@
 # Instalação
 
 Faça o clone ou download do projeto.
-Acesse o diretório "desafio" e rode o comando:
+Acesse o diretório "Desafio" e rode o comando:
 
 ```
   npm install
