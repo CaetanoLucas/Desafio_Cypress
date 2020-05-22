@@ -20,9 +20,16 @@ import elements from '../elements/compra.elements';
         });
     });
 
-    Cypress.Commands.add("InserirProdutoERetirar", (quantityOfItemsEmpty)=> {
+    Cypress.Commands.add("retirarProdutoEValidar", (quantityOfItemsEmpty)=> {
         cy.get(elements.btnDelet).click();
         cy.get(elements.quantityOfProducts).should('have.text', quantityOfItemsEmpty);
+    });
+
+    Cypress.Commands.add("informarCEPeValidarPrazoEntrega", (cep)=> {
+        cy.get(elements.freightMessage).should('not.exist');
+        cy.get(elements.fldCEP).type(cep);
+        cy.get(elements.btnCEP).click();
+        cy.get(elements.freightMessage).should('exist');
     });
 
     

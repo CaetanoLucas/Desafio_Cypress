@@ -8,6 +8,9 @@ const elements = {
     productModel: '[itemprop="name"]',
     shoppingCartItem: '[class="column-left"]',
     btnDelet: '[class="fa fa-trash fa-2 btn-del"]',
+    fldCEP: '[class="form-control cep"]',
+    btnCEP: '[class="btn btn-info btn-frete"]',
+    freightMessage: '.row-opcoes-frete > [colspan="4"]',
 };
 
 export default elements;

@@ -8,7 +8,7 @@ describe('Naveção de ponta a ponta compras JMAHFUZ', ()=> {
         cy.visit(dataConfigurations.baseUrl);
     });
     
-    it('Realizar busca de um notebook e adiciona-lo no carrinho', ()=> {
+    it('Realizar busca de um produto e adiciona-lo no carrinho', ()=> {
         cy.navegarAteBotaoComprar(data.product);
         cy.inserirProdutoEValidar(data.quantityOfItems);
     });
@@ -16,6 +16,12 @@ describe('Naveção de ponta a ponta compras JMAHFUZ', ()=> {
     it('Realizar buscar de um produto, adiciona-lo e retira-lo do carrinho', ()=> {
         cy.navegarAteBotaoComprar(data.product);
         cy.inserirProdutoEValidar(data.quantityOfItems);
-        cy.InserirProdutoERetirar(data.quantityOfItemsEmpty);
+        cy.retirarProdutoEValidar(data.quantityOfItemsEmpty);
+    });
+
+    it('Realizar busca de um produto adiciona-lo ao carrinho, informar o CEP e valizar prazo de entrega', ()=> {
+        cy.navegarAteBotaoComprar(data.product);
+        cy.inserirProdutoEValidar(data.quantityOfItems);
+        cy.informarCEPeValidarPrazoEntrega(data.cep);
     });
 });
