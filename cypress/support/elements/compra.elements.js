@@ -7,6 +7,7 @@ const elements = {
     quantityOfProducts:'[class="column-quant-itens"]',
     productModel: '[itemprop="name"]',
     shoppingCartItem: '[class="column-left"]',
+    btnDelet: '[class="fa fa-trash fa-2 btn-del"]',
 };
 
 export default elements;

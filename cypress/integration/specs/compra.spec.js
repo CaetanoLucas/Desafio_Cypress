@@ -9,6 +9,13 @@ describe('Naveção de ponta a ponta compras JMAHFUZ', ()=> {
     });
     
     it('Realizar busca de um notebook e adiciona-lo no carrinho', ()=> {
-        cy.buscarAdicionarItem(data.product, data.quantityOfItems);
+        cy.navegarAteBotaoComprar(data.product);
+        cy.inserirProdutoEValidar(data.quantityOfItems);
+    });
+
+    it('Realizar buscar de um produto, adiciona-lo e retira-lo do carrinho', ()=> {
+        cy.navegarAteBotaoComprar(data.product);
+        cy.inserirProdutoEValidar(data.quantityOfItems);
+        cy.InserirProdutoERetirar(data.quantityOfItemsEmpty);
     });
 });
