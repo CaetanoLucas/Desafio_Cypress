@@ -22,4 +22,4 @@ Ao terminar a instalação, rode o comando para iniciar o projeto
   npm run cypress:open
 ```
 
-Quando a aplicação estiver rodando acesse a janela do cypress. Esta janela abre por padrão na aba "Tests".Acesse o caminho: "INTEGRATIONS TESTS > specs" e clique no arquivo "compra.spec.js"   
+Quando a aplicação estiver rodando acesse a janela do cypress. Esta janela abre de forma padrão na aba "Tests".Acesse o caminho: "INTEGRATIONS TESTS > specs" e clique no arquivo "compra.spec.js"   
