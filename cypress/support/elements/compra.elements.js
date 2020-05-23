@@ -10,7 +10,7 @@ const elements = {
     btnDelet: '[class="fa fa-trash fa-2 btn-del"]',
     fldCEP: '[class="form-control cep"]',
     btnCEP: '[class="btn btn-info btn-frete"]',
-    freightMessage: '.row-opcoes-frete > [colspan="4"]',
+    freightMessage: '[name="frete[]"]',
 };
 
 export default elements;
