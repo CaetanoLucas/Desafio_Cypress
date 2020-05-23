@@ -1,6 +1,6 @@
 # Desafio 
 
-> Acessar um centro de compras e realizar testes end to end neste.
+> Acessar um centro de compras e realizar testes end to end.
 
 
 | Recurso | Versão |
@@ -17,9 +17,9 @@ Acesse o diretório "Desafio" e rode o comando:
   npm install
 ```
 
-Ao terminar a instalação rode o comando para iniciar o projeto
+Ao terminar a instalação, rode o comando para iniciar o projeto
 ```
   npm run cypress:open
 ```
 
-Quando a aplicação estiver rodando acesse a janela do cypress. Esta janela abre por padrão na aba "Tests", acesse o caminho: "INTEGRATIONS TESTS > specs" e clique no arquivo "compra.spec.js"   
+Quando a aplicação estiver rodando acesse a janela do cypress. Esta janela abre por padrão na aba "Tests".Acesse o caminho: "INTEGRATIONS TESTS > specs" e clique no arquivo "compra.spec.js"   
