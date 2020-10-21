@@ -24,4 +24,5 @@ describe('Navegação de ponta à ponta compras JMAHFUZ', ()=> {
         cy.inserirProdutoEValidar(data.quantityOfItems);
         cy.informarCEPeValidarPrazoEntrega(data.cep);
     });
+    // teste git
 });
