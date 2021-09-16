@@ -10,10 +10,8 @@
   "keywords": [],
   "author": "Lucas Caetano",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^4.4.0"
-  },
   "devDependencies": {
+    "cypress": "^8.4.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2"
